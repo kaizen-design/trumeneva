@@ -4,11 +4,12 @@
   "description": "A Bootstrap 5.0.2 boilerplate with sass and gulp 4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate.git"
+    "url": "git+https://github.com/kaizen-design/trumeneva"
   },
   "keywords": [
     "bootstrap 5",
@@ -23,13 +24,14 @@
   "author": "Denis Bondarchuk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate/issues"
+    "url": "https://github.com/kaizen-design/trumeneva/issues"
   },
-  "homepage": "https://github.com/JayeshLab/bootstrap-5-sass-gulp-4-boilerplate#readme",
+  "homepage": "https://github.com/kaizen-design/trumeneva#readme",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.2"
+    "bootstrap-icons": "^1.10.2",
+    "push-dir": "^0.4.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
