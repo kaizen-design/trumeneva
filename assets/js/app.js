@@ -35,7 +35,7 @@ const APP = {
     if (!$slider) return;
     const swiper = new Swiper($slider, {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 24,
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",

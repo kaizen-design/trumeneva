@@ -67,8 +67,8 @@
     transform: inherit!important;   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    @include media-breakpoint-down(md) {
+    gap: 24px;
+    @include media-breakpoint-down(sm) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -94,7 +94,7 @@
       border-color: #49A7EC;
       svg {
         path {
-          strike: $gray-900;
+          stroke: $gray-900;
         }
       }
     }
