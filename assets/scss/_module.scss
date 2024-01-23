@@ -74,6 +74,10 @@
   }
   &.-non-slider .swiper-slide {
       width: inherit!important;
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: none;
+      }
   }
   &.-non-slider .swiper-slide-duplicate {
       display: none;

@@ -172,6 +172,24 @@ body {
   }
 }
 
+// Content section
+.content-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(md) { 
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  & > .container {
+    max-width: 1272px;
+  }
+  p {
+    font-size: rem-calc(18);
+    color: $gray-700;
+    margin: 0;
+  }
+}
+
 // Footer
 .footer {
   background: $gray-200;
