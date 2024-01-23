@@ -1,5 +1,6 @@
 const APP = {
   init: () => {
+    // Common
     APP.handleDeadLinks();
     APP.scrollToAnchor();
 
@@ -31,49 +32,43 @@ const APP = {
     });
   },
 
+  initSlider: (selector) => {
+    const $el = document.querySelector(selector);
+    if ($el) {
+      new Swiper($el, APP.createSliderOptions(selector));
+    }    
+  },
+
   createSliderOptions: (selector) => {
     return {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 24,
       loop: true,
+      autoHeight: true,
       navigation: {
         nextEl: `${selector} .swiper-button-next`,
         prevEl: `${selector} .swiper-button-prev`,
       },  
-      /* autoplay: {
+      pagination: {
+        el: `${selector} .swiper-pagination`,
+        type: 'bullets',
+      },
+      autoplay: {
         delay: 5000,
-      }, */
+      },
       breakpoints: { 
-        // when window width is >= 1000px
-        1000: {
+        768: {
+          slidesPerView: 2      
+        },
+        992: {
           slidesPerView: 3        
         },
-        // when window width is >= 1400px
         1400: {
           slidesPerView: 4        
         }
-      },
-      on: {
-        resize: function enableOnlyMobile(swiper){
-          // Disable the slider when the window width is less than or equal to 767
-          if (window.innerWidth <= 767) {
-            swiper.disable();
-            swiper.el.classList.add('-non-slider');
-          } else {
-            swiper.enable();
-            swiper.el.classList.remove('-non-slider');
-          }
-        },
       }
     }
   },
-
-  initSlider: (selector) => {
-    const $el = document.querySelector(selector);
-    if ($el) {
-      const swiper = new Swiper($el, APP.createSliderOptions(selector));
-    }    
-  }
 
 };
 
