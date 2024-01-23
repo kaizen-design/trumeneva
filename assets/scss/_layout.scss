@@ -137,7 +137,8 @@ body {
 }
 
 // Specialists section
-.specialists-section {
+.specialists-section,
+.blog-section {
   padding-top: 80px;
   padding-bottom: 80px;
   @include media-breakpoint-down(md) { 
@@ -182,6 +183,7 @@ body {
   }
   & > .container {
     max-width: 1272px;
+    gap: 60px;
   }
   p {
     font-size: rem-calc(18);

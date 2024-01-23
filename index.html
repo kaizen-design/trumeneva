@@ -98,6 +98,7 @@
 
     <main>
       
+      <!-- Hero -->
       <section class="hero-section">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2 align-items-center">
@@ -119,6 +120,7 @@
         </div>
       </section>
 
+      <!-- Specialists -->
       <section class="specialists-section">
         <div class="container-fluid d-flex flex-column">
           <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-2">
@@ -135,7 +137,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -171,7 +173,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-purple">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -207,7 +209,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-teal">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -243,7 +245,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -279,7 +281,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-purple">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -315,7 +317,7 @@
               <div class="swiper-slide">
                 <div class="specialist-card card d-flex flex-column mb-md-4">
                   <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
-                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                    <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" />
                   </div>
                   <div class="d-flex flex-column align-items-center gap-1">
                     <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
@@ -363,11 +365,12 @@
         </div>
       </section>
 
+      <!-- Content section -->
       <section class="content-section bg-light">
-        <div class="container">
+        <div class="container d-flex flex-column">
           <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
             <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
-              <h2 class="mb-0">Специалистам</h2>
+              <h2 class="h2 mb-0">Специалистам</h2>
               <div class="d-flex flex-column gap-3 gap-lg-4">
                 <p>Все больше людей хотят помогать другим, становясь психологами, коучами. Но как сложно бывает найти именно своего специалиста, который реально поможет.</p>
                 <p>TruMen Eva дает возможность каждому специалисту найти своего клиента. А каждому человеку сделать правильный выбор.</p>
@@ -375,7 +378,114 @@
               <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
             </div>
             <div class="col d-flex flex-column align-items-center">
-              <img src="./assets/img/content-image-1.png" alt="" class="img-fluid" />
+              <img src="./assets/img/content-image-1.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="blog-section">
+        <div class="container-fluid d-flex flex-column">
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-2">
+            <h2 class="h2 mb-0">Блог</h2>
+            <a href="#" class="read-more-btn d-flex align-items-center gap-2">
+              Смотреть все
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.5625 5.25L19.3125 12L12.5625 18.75M18.375 12L4.6875 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>          
+          <div class="posts-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="post-card card d-flex flex-column">
+                  
+                </div>
+              </div>
+            </div>            
+            <!-- <div class="swiper-button-prev d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M8.5 14.8096L1.5 7.80957L8.5 0.80957" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M1.5 0.80957L8.5 7.80957L1.5 14.8096" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5">
+              <h2 class="h2 mb-0">Альтер Эго</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Только в TruMen Eva у Вас есть возможность получить созданную искусственным интеллектом картину вашего Альтер Эго.</p>
+                <p>Понимание Альтер Эго может дать вам возможность принять правильные решения в вашей жизни, выбрать верную стратегию.</p>
+              </div>  
+              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Создать Альтер Эго</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-2.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <h2 class="h1 mb-0 text-center">О проекте</h2>
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
+              <h3 class="h2 mb-0">Общайтесь голосом и&nbsp;текстом</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Общение голосом позволяет создать атмосферу искренности, выразить свои чувства и эмоции.</p>
+                <p>Общение в чатах позволяет общаться в любом месте, в любое время, конфиденциально.</p>
+              </div>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-3.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5">
+              <h2 class="h2 mb-0">Искусственный интеллект</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Возможность получать доступ к мировому объёму знаний путем общения с искусственным интеллектом.</p>
+              </div>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-4.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
+              <h2 class="h2 mb-0">Узнай себя</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Одно пространство чтобы узнать себя с разных сторон. Познать себя в сознательном и бессознательном. медиьтации и другие техники.</p>
+              </div>  
+              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-5.png" alt="" class="img-fluid" loading="lazy" />
             </div>
           </div>
         </div>

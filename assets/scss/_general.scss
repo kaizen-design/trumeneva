@@ -52,6 +52,12 @@
   }
 }
 
+h1, .h1 {
+  @include media-breakpoint-down(lg) { 
+    font-size: rem-calc(35);
+  }
+}
+
 h2, .h2 {
   @include media-breakpoint-down(lg) { 
     font-size: rem-calc(35);

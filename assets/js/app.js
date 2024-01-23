@@ -4,7 +4,7 @@ const APP = {
     APP.scrollToAnchor();
 
     // Homepage
-    APP.initSpecialistsSlider();
+    APP.initSpecialistsSlider('.specialists-slider');
   },
   
   handleDeadLinks: () => {
@@ -30,16 +30,16 @@ const APP = {
     });
   },
 
-  initSpecialistsSlider: () => {
-    const $slider = document.querySelector(".specialists-slider");
+  initSpecialistsSlider: (selector) => {
+    const $slider = document.querySelector(selector);
     if (!$slider) return;
     const swiper = new Swiper($slider, {
       slidesPerView: 2,
       spaceBetween: 24,
       loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: `${selector} .swiper-button-next`,
+        prevEl: `${selector} .swiper-button-prev`,
       },  
       /* autoplay: {
         delay: 5000,
@@ -57,12 +57,12 @@ const APP = {
       on: {
         resize: function enableOnlyMobile(swiper){
           // Disable the slider when the window width is less than or equal to 767
-          if(window.innerWidth <= 767){
-            swiper.disable()
-            swiper.el.classList.add('-non-slider')
-          }else{
-            swiper.enable()
-            swiper.el.classList.remove('-non-slider')
+          if (window.innerWidth <= 767) {
+            swiper.disable();
+            swiper.el.classList.add('-non-slider');
+          } else {
+            swiper.enable();
+            swiper.el.classList.remove('-non-slider');
           }
         },
       }
