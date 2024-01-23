@@ -119,7 +119,7 @@ gulp.task('dev', function browserDev(done) {
 });
 
 // Build task
-gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'), 'vendor:build', function copyAssets() {
+gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'), 'vendor:build', 'vendor:js', function copyAssets() {
   return gulp.src([
     '*.html',
     "assets/img/**"

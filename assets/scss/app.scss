@@ -1,3 +1,5 @@
+@import 'functions';
+
 // Custom bootstrap variable overrides
 @import "bootstrap_variable_overrides";
 
@@ -8,7 +10,7 @@
 @import url('https://fonts.cdnfonts.com/css/sf-compact-display');
 
 // Your style
-@import 'functions';
+
 @import "variables";
 @import "mixins";
 @import "general";

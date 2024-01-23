@@ -136,6 +136,42 @@ body {
   }
 }
 
+// Specialists section
+.specialists-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(md) { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  & > .container-fluid {
+    gap: 40px;
+  }
+}
+
+// Readmore button
+.read-more-btn {
+  font-size: rem-calc(20);
+  font-weight: 500;
+  color: $gray-900;
+  text-decoration: none;
+  transition: $transition-base;
+  &:hover, &:focus {
+    color: $primary;
+    svg {
+      path {
+        stroke: $primary;
+      }
+    }
+  }
+  svg {
+    path {
+      transition: $transition-base;
+      stroke: $gray-900;
+    }
+  }
+}
+
 // Footer
 .footer {
   background: $gray-200;

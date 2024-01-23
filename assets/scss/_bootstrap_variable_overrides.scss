@@ -12,11 +12,20 @@ $gray-300: #E3E5EA;
 $gray-350: #F8F9FC;
 $gray-400: #848CA1;
 $gray-500: #5E5E5E;
+$gray-600: #9AA2B2;
 $gray-900: #25252F;
+
+$purple: #9D5AF1;
+$teal: #49ECC5;
 
 $btn-border-width: 2px;
 $btn-font-weight: 500;
-
-$btn-padding-y-lg: 22px;
+$btn-font-size-sm: rem-calc(12);
+$btn-padding-y-sm: 6px;
+$btn-padding-x-sm: 12px;
+$btn-padding-y-lg: 18px;
 $btn-padding-x-lg: 72px;
 $btn-font-size-lg: rem-calc(20);
+
+$h2-font-size: rem-calc(45);
+$headings-font-weight: 600; 

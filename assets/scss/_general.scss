@@ -8,9 +8,13 @@
   max-width: 1100px;
 }
 
+.container-fluid {
+  max-width: 1656px;
+}
+
 // Buttons
 .btn {
-  &.primary {
+  &.btn-primary {
     &:hover, &:focus {
       background-color: $blue-600;
     }
@@ -18,12 +22,38 @@
       background-color: $blue-700;
     }
   }
-  &.btn-lg {
-    @include media-breakpoint-down(lg) {
-      padding: 11px 50px;
-    }
-    @include media-breakpoint-down(sm) {
-      padding: 11px 16px;
+  &.btn-gradient {
+    @include gradientAnimation(90deg, #6196EC, #34BADD);
+    border: none;
+    overflow: hidden;
+    color: $white;
+    &:hover, &:focus, &:active {
+      color: $white;
     }
   }
+  &.btn-sm {
+    font-weight: 400;
+  }
+  &.btn-lg {
+    @include media-breakpoint-down(lg) {
+      padding: 8px 25px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 8px 16px;
+    }
+  }
+}
+
+h2, .h2 {
+  @include media-breakpoint-down(md) { 
+    font-size: rem-calc(35);
+  }
+}
+
+.border-purple {
+  border-color: $purple !important;
+}
+
+.border-teal {
+  border-color: $teal !important;
 }
