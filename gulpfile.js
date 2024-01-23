@@ -36,7 +36,7 @@ gulp.task('vendor:fonts', function() {
 });
 
 // vendor task
-gulp.task('vendor', gulp.parallel('vendor:fonts', 'vendor:js'));
+gulp.task('vendor', gulp.parallel('vendor:js'));
 
 // Copy vendor's js to /dist
 gulp.task('vendor:build', function() {
@@ -45,8 +45,8 @@ gulp.task('vendor:build', function() {
     './assets/js/vendor/popper.min.js'
   ])
     .pipe(gulp.dest('./dist/assets/js/vendor'));
-  var fontStream = gulp.src(['./assets/fonts/bootstrap-icons/**/*.*']).pipe(gulp.dest('./dist/assets/fonts/bootstrap-icons'));
-  return merge (jsStream, fontStream);
+  //var fontStream = gulp.src(['./assets/fonts/bootstrap-icons/**/*.*']).pipe(gulp.dest('./dist/assets/fonts/bootstrap-icons'));
+  return merge (jsStream);
 })
 
 // Copy Bootstrap SCSS(SASS) from node_modules to /assets/scss/bootstrap
