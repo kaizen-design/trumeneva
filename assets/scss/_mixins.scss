@@ -23,6 +23,13 @@
   }
 }
 
+@mixin line-clamp($n: 1) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+}
+
 @mixin horizontal-align($left: 50%, $translateX: 50%) {
   position: absolute;
   left: $left;

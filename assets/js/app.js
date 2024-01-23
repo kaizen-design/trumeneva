@@ -4,7 +4,8 @@ const APP = {
     APP.scrollToAnchor();
 
     // Homepage
-    APP.initSpecialistsSlider('.specialists-slider');
+    APP.initSlider('.specialists-slider');
+    APP.initSlider('.posts-slider');
   },
   
   handleDeadLinks: () => {
@@ -30,10 +31,8 @@ const APP = {
     });
   },
 
-  initSpecialistsSlider: (selector) => {
-    const $slider = document.querySelector(selector);
-    if (!$slider) return;
-    const swiper = new Swiper($slider, {
+  createSliderOptions: (selector) => {
+    return {
       slidesPerView: 2,
       spaceBetween: 24,
       loop: true,
@@ -66,7 +65,14 @@ const APP = {
           }
         },
       }
-    });
+    }
+  },
+
+  initSlider: (selector) => {
+    const $el = document.querySelector(selector);
+    if ($el) {
+      const swiper = new Swiper($el, APP.createSliderOptions(selector));
+    }    
   }
 
 };

@@ -59,7 +59,8 @@
 }
 
 // Specialists slider
-.specialists-slider {
+.specialists-slider, 
+.posts-slider {
   margin-left: -1.5rem!important;
   padding: 0 1.5rem!important;
   width: calc(100% + 3rem);
@@ -82,6 +83,10 @@
   &.-non-slider .swiper-slide-duplicate {
       display: none;
   }
+}
+
+// Swiper buttons
+.swiper {
   .swiper-button-prev,
   .swiper-button-next {
     width: 48px;
@@ -121,7 +126,6 @@
 
 // Specialist card
 .specialist-card {
-  //max-width: 387px;
   gap: 15px;
   padding: 24px;
   border-color: $gray-300;
@@ -129,6 +133,7 @@
   overflow: visible;
   margin-top: 28px;
   transition: $transition-base;
+  background-color: $white;
   &:hover {
     box-shadow: 0px 2px 22.6px 0px rgba(22, 41, 88, 0.16);
   }
@@ -184,6 +189,39 @@
       &:hover {
         background-color: $gray-200;
       }
+    }
+  }
+}
+
+// Post card
+.post-card {
+  border-color: $gray-300;
+  border-radius: 10px;
+  background-color: $white;
+  overflow: hidden;
+  transition: $transition-base;
+  &:hover {
+    box-shadow: 0px 2px 22.6px 0px rgba(22, 41, 88, 0.16);
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-img-top {
+    background-color: $gray-350;
+    background-image: url('../img/icons/image-placeholder.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 327px;
+  }
+  .card-body {
+    padding: 1rem;
+    font-size: rem-calc(14);
+    color: $gray-400;
+    h2 {
+      @include line-clamp(1);
+    }
+    p {
+      @include line-clamp(5);
     }
   }
 }
