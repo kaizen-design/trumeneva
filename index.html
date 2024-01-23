@@ -55,27 +55,46 @@
           </li>
         </ul>
         <ul class="socials-list d-none d-lg-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
-          <li>
-            <a href="#" target="_blank">
-              <img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./assets/img/icons/telegram.svg" alt="Telegram" />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:">
-              <img src="./assets/img/icons/mail.svg" alt="Mail" />
-            </a>
-          </li>
+          <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
         </ul>
-        <button class="mobile-navbar-toggler d-md-none" type="button" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="mobile-navbar-toggler d-md-none" type="button" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
           <img src="./assets/img/icons/hamburger.svg" alt="Menu" />
         </button>
       </div>
     </nav>  
+
+    <!-- Mobile Nav Modal -->
+    <div class="mobile-nav-modal modal d-md-none" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true" data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen-md-down modal-dialog-scrollable">
+        <div class="modal-content flex flex-column">
+          <img class="close-btn" data-bs-dismiss="modal" aria-label="Close" src="./assets/img/icons/close.svg" alt="Close" />
+          <div class="d-flex flex-column">
+            <ul class="mobile-nav-menu d-flex flex-column list-unstyled m-0">
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Специалисты</a></li>
+              <li><a href="#">Психологи</a></li>
+              <li><a href="#">Коучи</a></li>
+              <li><a href="#">Энергопрактики</a></li>
+              <li><a href="#">Блог</a></li>
+              <li class="d-flex justify-content-between align-items-center gap-3">
+                <a href="#">Контакты</a>
+                <ul class="socials-list d-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
+                  <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer d-grid flex-column mt-auto p-0 border-0">
+            <a href="#" class="btn btn-outline-primary rounded-pill m-0">Чат поддержки</a>
+            <a href="#" class="btn btn-primary rounded-pill m-0">Присоединиться к комьюнити</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main>
       
@@ -98,21 +117,9 @@
           <div class="footer-nav d-flex flex-column gap-md-3">
             <h3 class="h6 m-0">Контакты</h3>
             <ul class="socials-list d-flex align-items-center gap-3 list-unstyled m-0">
-              <li>
-                <a href="#" target="_blank">
-                  <img src="./assets/img/icons/linkedin-g.svg" alt="LinkedIn" />
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="./assets/img/icons/telegram-g.svg" alt="Telegram" />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:">
-                  <img src="./assets/img/icons/mail-g.svg" alt="Mail" />
-                </a>
-              </li>
+              <li><a href="#"><img src="./assets/img/icons/linkedin-g.svg" alt="LinkedIn" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/telegram-g.svg" alt="Telegram" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/mail-g.svg" alt="Mail" /></a></li>
             </ul>
             <p class="m-0">Регистрационный номер 7161<br />ОАЭ, Дубай</p>
             <p class="m-0">TruMen Eva Tech Limited</p>

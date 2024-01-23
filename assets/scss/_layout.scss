@@ -61,13 +61,6 @@ body {
   }
   .socials-list {
     min-width: 146px;
-    a {
-      transition: $transition-base;
-      opacity: 1;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
   }
   .mobile-navbar-toggler {
     padding: 0;
@@ -92,19 +85,20 @@ body {
       gap: 30px;
     }
   }
-  .socials-list {
-    a {
-      transition: $transition-base;
-      opacity: 1;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
   .copyright {
     font-size: rem-calc(12);
     font-weight: 500;
     color: $gray-400;
+  }
+}
+
+.socials-list {
+  a {
+    transition: $transition-base;
+    opacity: 1;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

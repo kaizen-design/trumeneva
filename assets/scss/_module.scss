@@ -7,3 +7,53 @@
     font-size: rem-calc(24);
   }
 }
+
+// Mobile Nav Modal
+.mobile-nav-modal {
+  .modal-dialog {
+    min-height: 100%;
+    height: auto;
+  }
+  .modal-content {
+    background-color: $gray-100;
+    padding: 80px 1rem 40px 1rem;
+    min-height: 100vh;
+    gap: 60px;
+    .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      transition: $transition-base;
+      cursor: pointer;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+    .modal-footer {
+      gap: 20px;
+      justify-content: normal;
+      .btn {
+        font-size: rem-calc(16);
+        font-weight: 500;
+        padding-top: 0.469rem;
+        padding-bottom: 0.469rem;
+      }
+    }
+  }
+}
+
+.mobile-nav-menu {
+  gap: 30px;
+  font-size: rem-calc(18);
+  font-weight: 500;
+  li {
+    a {
+      text-decoration: none;
+      color: $gray-900;
+      transition: $transition-base;
+      &:hover, &:focus {
+        color: $primary;
+      }
+    }
+  }
+}
