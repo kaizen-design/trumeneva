@@ -18,4 +18,12 @@
       background-color: $blue-700;
     }
   }
+  &.btn-lg {
+    @include media-breakpoint-down(lg) {
+      padding: 11px 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 11px 16px;
+    }
+  }
 }

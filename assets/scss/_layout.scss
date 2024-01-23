@@ -70,6 +70,72 @@ body {
   }
 }
 
+// Hero section
+.hero-section {
+  background: $gray-350;
+  padding-top: 82px;
+  padding-bottom: 82px;
+  @include media-breakpoint-down(md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  & > .container {
+    max-width: 1424px;
+    & > .row {
+      @include media-breakpoint-down(md) {
+        gap: 30px;
+      }
+    }
+  }
+  .hero-text {
+    gap: 40px;
+    @include media-breakpoint-down(lg) {
+      gap: 20px;
+    }
+    .hero-heading {
+      gap: 20px;
+      @include media-breakpoint-down(lg) {
+        gap: 0;
+      }
+    }
+    h1 {
+      font-size: rem-calc(60);
+      font-weight: 600;
+      background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(45);
+      }
+    }
+    h3 {
+      font-size: rem-calc(55);
+      line-height: 1.1;
+      color: $gray-900;
+      font-weight: 600;
+      max-width: 552px;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(35);
+      }
+    }
+    p {
+      font-size: rem-calc(24);
+      max-width: 394px;
+    }
+  }
+  .hero-media {
+    @include media-breakpoint-down(md) {
+      gap: 30px;
+    }
+    .media-card {
+      border-radius: 38px;
+      overflow: hidden;
+    }
+  }
+}
+
 // Footer
 .footer {
   background: $gray-200;
