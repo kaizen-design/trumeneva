@@ -1,1 +1,9 @@
-// Module Style
+// Site alert
+.site-alert {
+  font-size: rem-calc(20);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  .counter {
+    font-size: rem-calc(24);
+  }
+}

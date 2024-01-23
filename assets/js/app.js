@@ -1,16 +1,15 @@
 const APP = {
   init: function() {
-    APP.functionOne();
+    //  Prevent jump to top on "#" links
+    document.querySelectorAll("a[href='#']").forEach(link => {
+      link.addEventListener("click", e => e.preventDefault());
+    });
   },
-  functionOne: function () {
   
-  },
   scrollTop: function() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 };
 (function() {
-  // your page initialization code here
-  // the DOM will be available here
   APP.init();
 })();

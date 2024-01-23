@@ -4,7 +4,11 @@
 // Bootstrap and its default variables
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// Fonts
+@import url('https://fonts.cdnfonts.com/css/sf-compact-display');
+
 // Your style
+@import 'functions';
 @import "variables";
 @import "mixins";
 @import "general";
@@ -16,8 +20,4 @@
 //Smooth Scroll
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  
 }
