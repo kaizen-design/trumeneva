@@ -10,8 +10,8 @@ const APP = {
   },
   
   handleDeadLinks: () => {
-    document.querySelectorAll("a[href='#']").forEach($link => {
-      $link.addEventListener("click", e => e.preventDefault());
+    document.querySelectorAll('a[href="#"]').forEach($link => {
+      $link.addEventListener('click', e => e.preventDefault());
     });
   },
 
@@ -21,12 +21,15 @@ const APP = {
 
   scrollToAnchor: ($el = document, offset = 0) => {
     $el.querySelectorAll('.smoothScroll').forEach($link => {
-      $link.addEventListener("click", function(event) {
+      $link.addEventListener('click', function(event) {
         event.preventDefault();
-        const href = this.getAttribute("href"), 
+        const href = this.getAttribute('href'), 
               $el = document.querySelector(href); 
         if ($el) {
-          window.scrollTo({ top: $el.offsetTop + offset, behavior: "smooth" });
+          window.scrollTo({ 
+            top: $el.offsetTop + offset, 
+            behavior: 'smooth' 
+          });
         }
       });
     });
@@ -58,19 +61,38 @@ const APP = {
       },
       breakpoints: { 
         768: {
-          slidesPerView: 2      
+          slidesPerView: 2,      
         },
         992: {
-          slidesPerView: 3        
+          slidesPerView: 3,        
         },
         1400: {
-          slidesPerView: 4        
+          slidesPerView: 4,        
         }
       }
     }
   },
 
+  initAccordions: () => {
+    const accordions = document.querySelectorAll(".accordion");
+    if (accordions) {
+      accordions.forEach(accordion => {
+        accordion.addEventListener("click", function () {
+          const panel = this.nextElementSibling;
+          if (panel) {
+            this.classList.toggle("open");        
+            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+          }        
+        });
+      });
+    }
+  },
+
 };
+
+function initAccordion() {
+  
+}
 
 (function() {
   APP.init();

@@ -39,11 +39,25 @@
       color: $white;
     }
   }
+  &.btn-light {
+    background-color: $white;
+    color: $primary;
+    &:hover, &:focus {
+      border-color: $primary;
+      background-color: $primary;
+      color: $white;
+    }
+    &:active {
+      background-color: $blue-700;
+      border-color: $blue-700;
+    }
+  }
+
   &.btn-sm {
     font-weight: 400;
   }
   &.btn-lg {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding: 8px 25px;
     }
     @include media-breakpoint-down(sm) {

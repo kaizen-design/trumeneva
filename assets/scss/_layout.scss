@@ -192,6 +192,42 @@ body {
   }
 }
 
+// CTA
+.cta-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+  @include media-breakpoint-down(md) { 
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  p {
+    font-size: rem-calc(20);
+  }
+}
+
+// FAQ
+.faq-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(md) { 
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  & > .container {
+    gap: 60px;
+    @include media-breakpoint-down(md) { 
+      gap: 30px;
+    }
+  }
+  h2 {
+    & + p {
+      color: #A6A6A6;
+      font-size: rem-calc(18);
+    }
+  }
+}
+
 // Footer
 .footer {
   background: $gray-200;
