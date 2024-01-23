@@ -40,13 +40,13 @@ gulp.task('vendor', gulp.parallel('vendor:js'));
 
 // Copy vendor's js to /dist
 gulp.task('vendor:build', function() {
-  var jsStream = gulp.src([
+  return gulp.src([
     './assets/js/vendor/bootstrap.bundle.min.js',
     './assets/js/vendor/popper.min.js'
   ])
     .pipe(gulp.dest('./dist/assets/js/vendor'));
   //var fontStream = gulp.src(['./assets/fonts/bootstrap-icons/**/*.*']).pipe(gulp.dest('./dist/assets/fonts/bootstrap-icons'));
-  return merge (jsStream);
+  //return merge (jsStream);
 })
 
 // Copy Bootstrap SCSS(SASS) from node_modules to /assets/scss/bootstrap
