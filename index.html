@@ -35,7 +35,7 @@
         </a>
         <ul class="nav justify-content-center mx-lg-auto gap-2 d-none d-md-flex">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">О проекте</a>
+            <a class="nav-link smoothScroll" aria-current="page" href="#about">О проекте</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,13 +77,13 @@
                 <h3 class="mb-0">здесь ты можешь быть счастливым</h3>
               </div>
               <p class="mb-0">Это пространство позитивного ментального здоровья.</p>
-              <a href="#" class="btn btn-lg btn-primary align-self-start rounded-pill d-none d-md-flex text-truncate">Присоединиться к комьюнити</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-start rounded-pill d-none d-md-flex text-truncate">Присоединиться к комьюнити</a>
             </div>
             <div class="hero-media col d-flex flex-column">
               <div class="media-card">
                 <img src="./assets/img/hero-image.jpg" alt="" class="img-fluid" />
               </div>
-              <a href="#" class="btn btn-lg btn-primary rounded-pill d-md-none text-truncate">Присоединиться к комьюнити</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary rounded-pill d-md-none text-truncate">Присоединиться к комьюнити</a>
             </div>
           </div>
         </div>
@@ -345,7 +345,7 @@
                 <p>Все больше людей хотят помогать другим, становясь психологами, коучами. Но как сложно бывает найти именно своего специалиста, который реально поможет.</p>
                 <p>TruMen Eva дает возможность каждому специалисту найти своего клиента. А каждому человеку сделать правильный выбор.</p>
               </div>  
-              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
             </div>
             <div class="col d-flex flex-column align-items-center">
               <img src="./assets/img/content-image-1.png" alt="" class="img-fluid" loading="lazy" />
@@ -474,7 +474,7 @@
       </section>
 
       <!-- Content section -->
-      <section class="content-section bg-light">
+      <section id="about" class="content-section bg-light">
         <div class="container d-flex flex-column">
           <h2 class="h1 mb-0 text-center">О проекте</h2>
           <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
@@ -518,7 +518,7 @@
               <div class="d-flex flex-column gap-3 gap-lg-4">
                 <p>Одно пространство чтобы узнать себя с разных сторон. Познать себя в сознательном и бессознательном. медиьтации и другие техники.</p>
               </div>  
-              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
             </div>
             <div class="col d-flex flex-column align-items-center">
               <img src="./assets/img/content-image-5.png" alt="" class="img-fluid" loading="lazy" />
@@ -536,7 +536,7 @@
               <p class="mb-0">Рекламный текст Рекламный текст Рекламный текст Рекламный текстРекламный текст Рекламный </p>
             </div>
             <div class="col-md-4 d-flex justify-content-md-end">
-              <a href="#" class="btn btn-lg btn-light rounded-pill text-truncate">Присоединиться</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-light rounded-pill text-truncate">Присоединиться</a>
             </div>
           </div>
         </div>
@@ -662,7 +662,7 @@
           <img class="close-btn" data-bs-dismiss="modal" aria-label="Close" src="./assets/img/icons/close.svg" alt="Close" />
           <div class="d-flex flex-column">
             <ul class="mobile-nav-menu d-flex flex-column list-unstyled m-0">
-              <li><a href="#">О проекте</a></li>
+              <li><a href="#about" class="smoothScroll">О проекте</a></li>
               <li><a href="#">Специалисты</a></li>
               <li><a href="#">Психологи</a></li>
               <li><a href="#">Коучи</a></li>
@@ -707,7 +707,7 @@
                 <label for="contactMessageInput" class="form-label">Ваша проблема или запрос специалисту</label>
                 <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary rounded-pill">Отправить</button>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
             </fieldset>
             <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
               <img src="./assets/img/icons/success.svg" alt="" />
@@ -715,6 +715,47 @@
                 <h3 class="mb-0 text-center">Ваше сообщение Ивану успешно отправлено</h3> 
                 <div class="alert alert-primary text-center mb-0 border-0" role="alert">Он свяжется с вами в ближайшее время.
                 </div> 
+              </div>
+            </fieldset>  
+          </form>  
+
+          <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.25 5.25L18.75 18.75M5.25 18.75L18.75 5.25" stroke="#848CA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Join Community Modal -->
+    <div class="modal fade" id="joinCommunityModal" tabindex="-1" aria-labelledby="joinCommunityModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Присоединиться к комьюнити</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Заполните пожалуйста форму, и мы свяжемся с вами для бесплатного размещения на сайте.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Напишите пожалуйста несколько слов о себе</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Мы свяжемся с вами в ближайшее время</h3>
               </div>
             </fieldset>  
           </form>  

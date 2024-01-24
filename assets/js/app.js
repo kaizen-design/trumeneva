@@ -9,7 +9,8 @@ const APP = {
     APP.initSlider('.posts-slider');
 
     // Modals
-    APP.handleContactModal();
+    APP.handleContactModal(document.getElementById('contactSpecialistModal'));
+    APP.handleContactModal(document.getElementById('joinCommunityModal'));
   },
   
   handleDeadLinks: () => {
@@ -76,9 +77,7 @@ const APP = {
     }
   },
 
-  handleContactModal: () => {
-    const $modal = document.getElementById('contactSpecialistModal');
-
+  handleContactModal: ($modal) => {
     const $form = $modal.querySelector('.contact-form');
     const $formControls = $form.querySelectorAll('.form-control');
     const $formMain = $form.querySelector('.form-main');
@@ -89,9 +88,11 @@ const APP = {
     // Populate additional form data
     $modal.addEventListener('show.bs.modal', (event) => {      
       const $invoker = event.relatedTarget;
-      const recipient = $invoker.getAttribute('data-specialist')
-      const $name = $modal.querySelector('#specialistName');
-      $name.textContent = recipient;
+      const recipient = $invoker.getAttribute('data-specialist');
+      if (recipient) {
+        const $name = $modal.querySelector('#specialistName');
+        $name.textContent = recipient;
+      }      
     });
 
     // Submit form
