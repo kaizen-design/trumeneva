@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <title>Trumeneva | Специалисты</title>
+    <title>Trumeneva | Специалист</title>
 
     <!-- Favicons -->
     <link rel="icon" href="./assets/img/favicons/favicon.png" />
@@ -65,10 +65,98 @@
       </div>
     </nav>
 
-    <main>
+    <main class="">
+
+      <section class="single-specialist">
+        <div class="container d-flex flex-column">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Главная</a></li>
+              <li class="breadcrumb-item"><a href="./specialists.html">Специалисты</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Иван Иванов</li>
+            </ol>
+          </nav>
+          <div class="d-flex flex-column flex-lg-row justify-content-between gap-4">
+            <aside class="specialist-sidebar card d-flex flex-column">
+              <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+              </div>
+              <div class="d-flex flex-column gap-1 align-items-center">
+                <h1 class="card-name fw-medium h3 mb-0">Иван Иванов</h1>
+                <p class="card-contact fw-medium mb-0">@ivanushki</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3">
+                <div class="d-flex flex-column gap-1">
+                  <h4 class="card-title fw-medium mb-0">Психотерапевт</h4>
+                  <p class="card-experience fw-medium mb-0">Стаж 18 лет</p>
+                </div>
+                <span class="card-price d-flex align-items-center gap-1">
+                  <span class="price-value fw-medium">15$</span>
+                  <span class="price-label">30 мин</span>
+                </span>
+              </div>
+              <button type="button" class="btn btn-gradient rounded-pill text-truncate" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+              <ul class="card-meta mb-0 list-unstyled d-flex flex-column">
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Документы об образовании</span>
+                  <div class="row row-cols-2 g-3">
+                    <div class="col">
+                      <a href="#" class="card-document position-relative d-flex flex-column">
+                        <span class="doc-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18C15.1421 18 18.5 14.6421 18.5 10.5C18.5 6.35786 15.1421 3 11 3C6.85786 3 3.5 6.35786 3.5 10.5C3.5 14.6421 6.85786 18 11 18Z" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5008 20.9998L16.3008 15.7998" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                        <img src="./assets/img/document.png" alt="" class="img-fluid w-100 h-100 object-fit-cover" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Место обучения</span>
+                  <p class="meta-value mb-0">Белорусский Государственный Университет</p>
+                </li>
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Время обучения</span>
+                  <p class="meta-value mb-0">С 13 мая 2000 года<br />По 14 мая 2005 года</p>
+                </li>
+              </ul>
+            </aside>
+            <div class="specialist-main d-flex flex-column">
+              <ul class="info-nav nav mb-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Методы работы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Запросы на проработку</a>
+                </li>
+              </ul>
+              <div id="about" class="about-section d-flex flex-column gap-4">
+                <h3 class="mb-0">Обо мне</h3>
+                <div class="content">
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                </div>
+              </div>
+              <div class="embed-video">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>  
+      
 
       <!-- Specialists -->
-      <section class="specialists-section">
+      <!-- <section class="specialists-section">
         <div class="container-fluid d-flex flex-column">
           <div class="d-flex flex-column gap-4 mb-md-4">
             <h1 class="h2 mb-0">Специалисты</h1>
@@ -383,7 +471,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- CTA -->
       <section class="cta-section text-white">

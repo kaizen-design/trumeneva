@@ -312,3 +312,59 @@
     }
   }
 }
+
+// Breadcrumbs
+.breadcrumb {
+  .breadcrumb-item {
+    & + .breadcrumb-item::before {
+      position: relative;
+      top: 1px;
+    }
+    a {
+      text-decoration: none;
+      color: $gray-400;
+      &:hover, &:focus {
+        background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
+
+// Info Nav
+.info-nav {
+  gap: 20px;
+  .nav-item {
+    .nav-link {
+      color: $gray-400;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      &:hover {
+        background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.active {
+        background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: default;
+        position: relative;
+        &:after {
+          content: '';
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+        }
+      }
+    }
+  }
+}
