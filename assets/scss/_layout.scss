@@ -164,6 +164,23 @@ body {
   & > .container-fluid {
     gap: 40px;
   }
+  .nav-pills {
+    .nav-link {
+      transition: $transition-base;
+      &.active {
+        cursor: default;
+      }
+      &:not(.active) {
+        &:hover {
+          color: $nav-link-color;
+          background: linear-gradient(87deg, #6196EC -4.41%, #34BADD 59.04%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
 }
 
 // Readmore button
@@ -353,6 +370,25 @@ body {
     color: $gray-400;
     & > *:last-child {
       margin-bottom: 0;
+    }
+  }
+  .meta-section {
+    gap: 30px;
+  }
+  .service-list {
+    li {
+      font-size: rem-calc(16);
+      font-weight: 500;
+      background: linear-gradient(90deg, #5C8DE1 -7.47%, #35B0D0 85.26%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 6px 12px;
+      border: 1px solid $gray-300;
+      transition: $transition-base;
+      &:hover {
+        background-color: $gray-200;
+      }
     }
   }
 }
