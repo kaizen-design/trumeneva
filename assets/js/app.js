@@ -7,6 +7,9 @@ const APP = {
     // Homepage
     APP.initSlider('.specialists-slider');
     APP.initSlider('.posts-slider');
+
+    // Modals
+    APP.handleContactModal();
   },
   
   handleDeadLinks: () => {
@@ -73,19 +76,61 @@ const APP = {
     }
   },
 
-  initAccordions: () => {
-    const accordions = document.querySelectorAll(".accordion");
-    if (accordions) {
-      accordions.forEach(accordion => {
-        accordion.addEventListener("click", function () {
-          const panel = this.nextElementSibling;
-          if (panel) {
-            this.classList.toggle("open");        
-            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
-          }        
-        });
+  handleContactModal: () => {
+    const $modal = document.getElementById('contactSpecialistModal');
+
+    const $form = $modal.querySelector('.contact-form');
+    const $formControls = $form.querySelectorAll('.form-control');
+    const $formMain = $form.querySelector('.form-main');
+    const $formResult = $form.querySelector('.form-result');
+    const $button = $form.querySelector('[type="submit"]');
+    const buttonText = $button.textContent;
+    
+    // Populate additional form data
+    $modal.addEventListener('show.bs.modal', (event) => {      
+      const $invoker = event.relatedTarget;
+      const recipient = $invoker.getAttribute('data-specialist')
+      const $name = $modal.querySelector('#specialistName');
+      $name.textContent = recipient;
+    });
+
+    // Submit form
+    $form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      // Get form data
+      const formData = new FormData($form);
+
+      // Disable submit button
+      $button.setAttribute('disabled', true);
+      $button.textContent = 'Отправка...';
+
+      return new Promise((resolve, reject) => {
+        // Do API request here...
+        setTimeout(() => {
+          resolve()
+        }, 3000);
+      })
+      .then((res) => {
+        // Show success message
+        $formMain.classList.add('d-none');
+        $formResult.classList.remove('d-none');
+      })
+      .catch(error => console.error(error))
+      .finally(() => {
+        // Restore button text
+        $button.removeAttribute('disabled');
+        $button.textContent = buttonText;
       });
-    }
+    });
+
+    // Form cleanup
+    $modal.addEventListener('hidden.bs.modal', () => {
+      $formMain.classList.remove('d-none');
+      $formResult.classList.add('d-none');
+      $formControls.forEach(control => control.value = '');
+    });
+
   },
 
 };

@@ -689,25 +689,34 @@
     <!-- Contact Specialist Modal -->
     <div class="modal fade" id="contactSpecialistModal" tabindex="-1" aria-labelledby="contactSpecialistModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content d-flex flex-column gap-4">
+        <div class="modal-content">
           
-          <div class="d-flex flex-column gap-3">
-            <h3 class="mb-0 text-center">Связаться с Иваном</h3> 
-            <div class="alert alert-primary text-center mb-0 border-0" role="alert">
-              Напишите пожалуйста ваш номер телефона и вашу проблему или запрос, и выбранный специалист свяжется с вами.
-            </div> 
-          </div>
-
-          <form class="d-flex flex-column gap-4">
-            <div class="d-flex flex-column">
-              <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
-              <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
-            </div>
-            <div class="d-flex flex-column">
-              <label for="contactMessageInput" class="form-label">Ваша проблема или запрос специалисту</label>
-              <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary rounded-pill">Отправить</button>
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Связаться с <span id="specialistName">Иваном</span></h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Напишите пожалуйста ваш номер телефона и вашу проблему или запрос, и выбранный специалист свяжется с вами.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Ваша проблема или запрос специалисту</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Ваше сообщение Ивану успешно отправлено</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">Он свяжется с вами в ближайшее время.
+                </div> 
+              </div>
+            </fieldset>  
           </form>  
 
           <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
