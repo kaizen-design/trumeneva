@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <title>Trumeneva | Специалист</title>
+    <title>Trumeneva | Статья</title>
 
     <!-- Favicons -->
     <link rel="icon" href="./assets/img/favicons/favicon.png" />
@@ -38,7 +38,7 @@
             <a class="nav-link" href="./#about">О проекте</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Специалисты
             </a>
             <ul class="dropdown-menu p-0 overflow-hidden" aria-labelledby="navbarDropdown">
@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./blog.html">Блог</a>
+            <a class="nav-link active" aria-current="page" href="./blog.html">Блог</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacts.html">Контакты</a>
@@ -66,176 +66,131 @@
     </nav>
 
     <main>
-      <section class="single-specialist">
-        <div class="container d-flex flex-column">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./">Главная</a></li>
-              <li class="breadcrumb-item"><a href="./specialists.html">Специалисты</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Иван Иванов</li>
-            </ol>
-          </nav>
-          <div class="d-flex flex-column flex-lg-row justify-content-between gap-5 gap-lg-4">
-            <aside class="specialist-sidebar card d-flex flex-column align-self-start d-none d-lg-flex">
-              <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
-                <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
-              </div>
-              <div class="d-flex flex-column gap-1 align-items-center">
-                <h1 class="card-name fw-medium h3 mb-0">Иван Иванов</h1>
-                <p class="card-contact fw-medium mb-0">@ivanushki</p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center gap-3">
-                <div class="d-flex flex-column gap-1">
-                  <h4 class="card-title fw-medium mb-0">Психотерапевт</h4>
-                  <p class="card-experience fw-medium mb-0">Стаж 18 лет</p>
-                </div>
-                <span class="card-price d-flex align-items-center gap-1">
-                  <span class="price-value fw-medium">15$</span>
-                  <span class="price-label">30 мин</span>
-                </span>
-              </div>
-              <button type="button" class="btn btn-gradient rounded-pill text-truncate" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
-              <ul class="card-meta mb-0 list-unstyled d-flex flex-column">
-                <li class="d-flex flex-column">
-                  <span class="meta-label">Документы об образовании</span>
-                  <div class="row row-cols-2 g-3">
-                    <div class="col">
-                      <a href="#" class="card-document position-relative d-flex flex-column">
-                        <span class="doc-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18C15.1421 18 18.5 14.6421 18.5 10.5C18.5 6.35786 15.1421 3 11 3C6.85786 3 3.5 6.35786 3.5 10.5C3.5 14.6421 6.85786 18 11 18Z" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21.5008 20.9998L16.3008 15.7998" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        </span>
-                        <img src="./assets/img/document.png" alt="" class="img-fluid w-100 h-100 object-fit-cover" />
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="d-flex flex-column">
-                  <span class="meta-label">Место обучения</span>
-                  <p class="meta-value mb-0">Белорусский Государственный Университет</p>
-                </li>
-                <li class="d-flex flex-column">
-                  <span class="meta-label">Время обучения</span>
-                  <p class="meta-value mb-0">С 13 мая 2000 года<br />По 14 мая 2005 года</p>
-                </li>
-              </ul>
-            </aside>
-            <div class="specialist-main d-flex flex-column">
-              <ul class="info-nav nav mb-0">
-                <li class="nav-item">
-                  <a class="nav-link smoothScroll active" aria-current="page" href="#about">Обо мне</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link smoothScroll" href="#methods">Методы работы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link smoothScroll" href="#inquiries">Запросы на проработку</a>
-                </li>
-              </ul>
-              <div class="d-lg-none d-flex gap-3">
-                <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
-                  <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
-                </div>
-                <div class="d-flex flex-column gap-1 flex-grow-1">
-                  <h1 class="card-name fw-medium h3 mb-0">Иван Иванов</h1>
-                  <p class="card-contact fw-medium mb-0">@ivanushki</p>
-                  <span class="card-price d-flex align-items-center gap-1">
-                    <span class="price-value fw-medium">15$</span>
-                    <span class="price-label">30 мин</span>
-                  </span>
-                </div>
-              </div>
-              <button type="button" class="btn btn-gradient rounded-pill text-truncate d-lg-none" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
-              <div id="about" class="scroll-margin-top-30 d-flex flex-column gap-3 gap-lg-4">
-                <h3 class="mb-0">Обо мне</h3>
-                <div class="content">
-                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
-                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
-                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
-                </div>
-              </div>
-              <div class="embed-video">
-                <div class="ratio ratio-16x9">
-                  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="profile-card d-lg-none d-flex flex-column gap-3 position-relativesingle-specialist.html">
-                <div class="d-flex flex-column gap-1">
-                  <span class="profile-title">Психотерапевт</span>
-                  <span class="profile-licence d-flex align-items-center gap-1">
-                    <img src="./assets/img/icons/licence.svg" alt="" />
-                    3456789876к543
-                  </span>
-                  <span>Стаж 18 лет</span>
-                </div>
-                <ul class="card-meta mb-0 list-unstyled d-flex flex-column">
-                  <li class="d-flex flex-column">
-                    <span class="meta-label">Документы об образовании</span>
-                    <div class="row row-cols-2 g-3">
-                      <div class="col">
-                        <a href="#" class="card-document position-relative d-flex flex-column">
-                          <span class="doc-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18C15.1421 18 18.5 14.6421 18.5 10.5C18.5 6.35786 15.1421 3 11 3C6.85786 3 3.5 6.35786 3.5 10.5C3.5 14.6421 6.85786 18 11 18Z" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M21.5008 20.9998L16.3008 15.7998" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                          </span>
-                          <img src="./assets/img/document.png" alt="" class="img-fluid w-100 h-100 object-fit-cover" />
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>  
-              </div>
-              <div class="meta-section d-flex flex-column">
-                <h3 class="mb-0">Интересы</h3>
-                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
-                  <li class="rounded-pill text-truncate">Кино</li>
-                  <li class="rounded-pill text-truncate">Духовное развитие</li>
-                  <li class="rounded-pill text-truncate">Физическое развитие</li>
-                  <li class="rounded-pill text-truncate">Жизненный выбор</li>
-                  <li class="rounded-pill text-truncate">Карьера</li>
-                  <li class="rounded-pill text-truncate">Отношения с семьей</li>
-                </ul>
-              </div>
-              <div id="methods" class="scroll-margin-top-30 meta-section d-flex flex-column">
-                <h3 class="mb-0">Методы работы</h3>
-                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
-                  <li class="rounded-pill text-truncate">Психоанализ</li>
-                  <li class="rounded-pill text-truncate">Коучинг</li>
-                  <li class="rounded-pill text-truncate">Гештальт</li>
-                  <li class="rounded-pill text-truncate">НЛП</li>
-                  <li class="rounded-pill text-truncate">Клиент-центрированная терапия</li>
-                  <li class="rounded-pill text-truncate">Краткосрочная психодинамическая терапия</li>
-                  <li class="rounded-pill text-truncate">Арт-терапия</li>
-                </ul>
-              </div>
-              <div id="inquiries" class="scroll-margin-top-30 meta-section d-flex flex-column">
-                <h3 class="mb-0">Запросы на проработку</h3>
-                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
-                  <li class="rounded-pill text-truncate">Нет друзей</li>
-                  <li class="rounded-pill text-truncate">Отношения с детьми</li>
-                  <li class="rounded-pill text-truncate">Отношения с партнером</li>
-                </ul>
-              </div>
-            </div>
+      <section class="single-post d-flex flex-column">
+        <div class="container-fluid d-flex flex-column">
+          <div class="d-flex flex-column gap-3 gap-lg-4">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./">Главная</a></li>
+                <li class="breadcrumb-item"><a href="./blog.html">Блог</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Название статьи</li>
+              </ol>
+            </nav>
+            <h1 class="h2 post-title mb-0">Название статьи</h1>
+          </div>  
+          <div class="post-img">
+            <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
           </div>
         </div>
-      </section>  
+        <div class="container d-flex flex-column gap-3">
+          <span class="post-date">24 Дек, 2024</span>
+          <div class="post-content">
+            <h2>Заголовок</h2>
+            <p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст Текст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи Текст...</p>
+            <h3>Заголовок</h3>
+            <p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст Текст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи Текст...</p>
+            <h3>Заголовок</h3>
+            <p>Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст статьи Текст Текст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи ТекстТекст статьи Текст статьи Текст...</p>
+          </div>
+        </div>
+      </section>
 
-      <!-- CTA -->
-      <section class="cta-section text-white">
-        <div class="container">
-          <div class="row g-4 g-lg-5 align-items-center">
-            <div class="col-md-8 d-flex flex-column gap-3">
-              <h2 class="h3 mb-0 fw-bold">Присоединитесь  как специалист</h2>
-              <p class="mb-0">Рекламный текст Рекламный текст Рекламный текст Рекламный текстРекламный текст Рекламный </p>
+      <!-- Related Articles -->
+      <section class="blog-section pt-0">
+        <div class="container-fluid d-flex flex-column gap-5 gap-lg-4">
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-2">
+            <h2 class="h2 mb-0">Блог</h2>
+            <a href="./blog.html" class="read-more-btn d-flex align-items-center gap-2">
+              Смотреть все
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.5625 5.25L19.3125 12L12.5625 18.75M18.375 12L4.6875 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>          
+          <div class="posts-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">С другой стороны новая модель организационной деятельности представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения дальнейших направлений развития. С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по разработке новых предложений..</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Повседневная практика показывает, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Товарищи! консультация с широким активом играет важную роль в формировании дальнейших направлений развития.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>            
+            <div class="swiper-button-prev d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M8.5 14.8096L1.5 7.80957L8.5 0.80957" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-            <div class="col-md-4 d-flex justify-content-md-end">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-light rounded-pill text-truncate"><span class="gradient-text">Присоединиться</span></a>
+            <div class="swiper-button-next d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M1.5 0.80957L8.5 7.80957L1.5 14.8096" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
+            <div class="swiper-pagination position-static mt-3 d-md-none"></div>
           </div>
         </div>
       </section>
@@ -411,6 +366,12 @@
         </div>
       </div>
     </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script
       src="./assets/js/vendor/bootstrap.bundle.min.js"

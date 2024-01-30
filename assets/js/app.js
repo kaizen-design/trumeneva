@@ -79,6 +79,8 @@ const APP = {
   },
 
   handleContactModal: ($modal) => {
+    if (!$modal) return;
+    
     const $form = $modal.querySelector('.contact-form');
     const $formControls = $form.querySelectorAll('.form-control');
     const $formMain = $form.querySelector('.form-main');
