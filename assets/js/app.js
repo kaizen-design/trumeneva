@@ -8,13 +8,13 @@ const APP = {
       new Date().setHours(new Date().getHours() + 4) // TODO: pass correct value
     );
 
-    // Homepage
-    APP.initSlider('.specialists-slider');
-    APP.initSlider('.posts-slider');
-
     // Modals
     APP.handleContactModal(document.getElementById('contactSpecialistModal'));
     APP.handleContactModal(document.getElementById('joinCommunityModal'));
+
+    // Homepage
+    APP.initSlider('.specialists-slider');
+    APP.initSlider('.posts-slider');    
   },
   
   handleDeadLinks: () => {
@@ -27,17 +27,14 @@ const APP = {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   },
 
-  scrollToAnchor: ($el = document, offset = 0) => {
+  scrollToAnchor: ($el = document) => {
     $el.querySelectorAll('.smoothScroll').forEach($link => {
       $link.addEventListener('click', function(event) {
         event.preventDefault();
         const href = this.getAttribute('href'), 
               $el = document.querySelector(href); 
-        if ($el) {
-          window.scrollTo({ 
-            top: $el.offsetTop + offset, 
-            behavior: 'smooth' 
-          });
+        if (href && $el) {
+          $el.scrollIntoView({ block: "start", behavior: "smooth" });
         }
       });
     });
@@ -160,7 +157,7 @@ const APP = {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      // Output the result in an element with id="demo"
+      // Output the result
       $el.textContent = 
         (days ? days + ":" : '') + 
         (hours ? hours + ":" : '') + 
@@ -170,16 +167,12 @@ const APP = {
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        $el.textContent = "Время вышло!";
+        $el.textContent = "Ни хуя не осталось!";
       }
     }, 1000);
   }
 
 };
-
-function countDown() {
-  
-}
 
 (function() {
   APP.init();

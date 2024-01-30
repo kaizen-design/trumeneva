@@ -316,6 +316,9 @@
 // Breadcrumbs
 .breadcrumb {
   .breadcrumb-item {
+    @include media-breakpoint-down(lg) {
+      font-size: 1rem;
+    }
     & + .breadcrumb-item::before {
       position: relative;
       top: 1px;
