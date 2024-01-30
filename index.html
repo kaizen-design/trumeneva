@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Trumeneva</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/img/favicons/favicon.png" />
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/app.min.css">
+    
+  </head>
+
+  <body>
+    
+    <div class="site-alert bg-primary d-flex flex-column justify-content-center">
+      <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center text-white gap-2">
+        <p class="mb-0 fw-medium text-center">Текст со специальным предложением</p>
+        <div class="d-flex align-items-center gap-3">
+          <span class="fw-medium">Осталось</span>
+          <span class="fw-semibold counter">10:30</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 m-0" href="./">
+          <img src="./assets/img/navbar-brand.svg" alt="Trumeneva" width="146" height="45" />
+        </a>
+        <ul class="nav justify-content-center mx-lg-auto gap-2 d-none d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link smoothScroll" aria-current="page" href="#about">О проекте</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Специалисты
+            </a>
+            <ul class="dropdown-menu p-0 overflow-hidden" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./specialists.html">Психологи</a></li>
+              <li><a class="dropdown-item" href="./specialists.html">Коучи</a></li>
+              <li><a class="dropdown-item" href="./specialists.html">Энергопрактики</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="socials-list d-none d-lg-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
+          <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
+        </ul>
+        <button class="mobile-navbar-toggler d-md-none" type="button" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
+          <img src="./assets/img/icons/hamburger.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 align-items-center">
+            <div class="hero-text col d-flex flex-column">
+              <div class="hero-heading d-flex flex-column">
+                <h1 class="mb-0">TruMenEva</h1>
+                <h3 class="mb-0">здесь ты можешь быть счастливым</h3>
+              </div>
+              <p class="mb-0">Это пространство позитивного ментального здоровья.</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-start rounded-pill d-none d-md-flex text-truncate">Присоединиться к комьюнити</a>
+            </div>
+            <div class="hero-media col d-flex flex-column">
+              <div class="media-card">
+                <img src="./assets/img/hero-image.jpg" alt="" class="img-fluid" />
+              </div>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary rounded-pill d-md-none text-truncate">Присоединиться к комьюнити</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specialists -->
+      <section class="specialists-section">
+        <div class="container-fluid d-flex flex-column">
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-2">
+            <h2 class="h2 mb-0">Специалисты</h2>
+            <a href="./specialists.html" class="read-more-btn d-flex align-items-center gap-2">
+              Смотреть всех
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.5625 5.25L19.3125 12L12.5625 18.75M18.375 12L4.6875 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>          
+          <div class="specialists-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-purple">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-teal">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-purple">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="specialist-card card d-flex flex-column mb-md-4 position-relative">
+                  <a class="card-link" href="./single-specialist.html"></a>
+                  <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                    <a href="./single-specialist.html"><img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" loading="lazy" /></a>
+                  </div>
+                  <div class="d-flex flex-column align-items-center gap-1">
+                    <h4 class="h6 fw-medium mb-0">Иван Иванов</h4>
+                    <ul class="card-meta list-unstyled d-flex align-items-center mb-0">
+                      <li>Психотерапевт</li>
+                      <li>Стаж 18 лет</li>
+                    </ul>
+                  </div>
+                  <div class="card-price d-flex gap-1 align-items-center">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Методы</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Коучинг</li>
+                      <li class="rounded-pill">Гештальт</li>
+                      <li class="rounded-pill">НЛП</li>
+                      <li class="rounded-pill">Психоанализ</li>
+                    </ul>
+                  </div>
+                  <div class="card-services d-flex flex-column gap-2">
+                    <p class="service-label mb-0 ">Запросы на проработку</p>
+                    <ul class="service-list list-unstyled mb-0 d-flex gap-1 flex-wrap">
+                      <li class="rounded-pill">Отношения с детьми</li>
+                      <li class="rounded-pill">Нет друзей</li>
+                      <li class="rounded-pill">Отношения с партнером</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-sm btn-gradient rounded-pill text-truncate position-relative z-1" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+                </div>
+              </div>
+            </div>            
+            <div class="swiper-button-prev d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M8.5 14.8096L1.5 7.80957L8.5 0.80957" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M1.5 0.80957L8.5 7.80957L1.5 14.8096" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="swiper-pagination position-static mt-3 d-md-none"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
+              <h2 class="h2 mb-0">Специалистам</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Все больше людей хотят помогать другим, становясь психологами, коучами. Но как сложно бывает найти именно своего специалиста, который реально поможет.</p>
+                <p>TruMen Eva дает возможность каждому специалисту найти своего клиента. А каждому человеку сделать правильный выбор.</p>
+              </div>  
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-1.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section class="blog-section">
+        <div class="container-fluid d-flex flex-column gap-5 gap-lg-4">
+          <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-2">
+            <h2 class="h2 mb-0">Блог</h2>
+            <a href="./blog.html" class="read-more-btn d-flex align-items-center gap-2">
+              Смотреть все
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12.5625 5.25L19.3125 12L12.5625 18.75M18.375 12L4.6875 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>          
+          <div class="posts-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">С другой стороны новая модель организационной деятельности представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации направлений прогрессивного развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения дальнейших направлений развития. С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по разработке новых предложений..</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание дальнейших направлений развития.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="post-card card my-md-3">
+                  <a href="./post.html">
+                    <div class="card-img card-img-top">
+                      <!-- <img src="" class="img-fluid h-100 w-100 object-fit-cover" alt="Название статьи">   -->
+                    </div>
+                    <div class="card-body p-3 d-flex flex-column gap-2">
+                      <span>24 Дек, 2024</span>
+                      <h2 class="h6 fw-medium text-black mb-0">Название статьи</h2>
+                      <p class="mb-0">Повседневная практика показывает, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Товарищи! консультация с широким активом играет важную роль в формировании дальнейших направлений развития.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>            
+            <div class="swiper-button-prev d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M8.5 14.8096L1.5 7.80957L8.5 0.80957" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="swiper-button-next d-none d-md-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                <path d="M1.5 0.80957L8.5 7.80957L1.5 14.8096" stroke="#9AA2B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="swiper-pagination position-static mt-3 d-md-none"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5">
+              <h2 class="h2 mb-0">Альтер Эго</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Только в TruMen Eva у Вас есть возможность получить созданную искусственным интеллектом картину вашего Альтер Эго.</p>
+                <p>Понимание Альтер Эго может дать вам возможность принять правильные решения в вашей жизни, выбрать верную стратегию.</p>
+              </div>  
+              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Создать Альтер Эго</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-2.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section id="about" class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <h2 class="h1 mb-0 text-center">О проекте</h2>
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
+              <h3 class="h2 mb-0">Общайтесь голосом и&nbsp;текстом</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Общение голосом позволяет создать атмосферу искренности, выразить свои чувства и эмоции.</p>
+                <p>Общение в чатах позволяет общаться в любом месте, в любое время, конфиденциально.</p>
+              </div>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-3.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5">
+              <h2 class="h2 mb-0">Искусственный интеллект</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Возможность получать доступ к мировому объёму знаний путем общения с искусственным интеллектом.</p>
+              </div>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-4.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5 order-md-last">
+              <h2 class="h2 mb-0">Узнай себя</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Одно пространство чтобы узнать себя с разных сторон. Познать себя в сознательном и бессознательном. медиьтации и другие техники.</p>
+              </div>  
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Присоединиться к комьюнити</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-5.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section text-white">
+        <div class="container">
+          <div class="row g-4 g-lg-5 align-items-center">
+            <div class="col-md-8 d-flex flex-column gap-3">
+              <h2 class="h3 mb-0 fw-bold">Присоединитесь  как специалист</h2>
+              <p class="mb-0">Рекламный текст Рекламный текст Рекламный текст Рекламный текстРекламный текст Рекламный </p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-md-end">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-light rounded-pill text-truncate"><span class="gradient-text">Присоединиться</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section">
+        <div class="container d-flex flex-column">
+          <div class="d-flex flex-column gap-3 align-items-center">
+            <h2 class="h2 mb-0">Часто задаваемые вопросы</h2>
+            <p class="mb-0">У вас остались вопросы? Напишите в чат поддержки</p>
+          </div>
+          <div class="faq-list accordion d-flex flex-column" id="faqListAccordion">
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="faqHeading-1">
+                <button class="accordion-button collapsed fw-medium text-black px-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faqPanel-1" aria-expanded="false" aria-controls="faqPanel-1">
+                  How is TruMen Eva different from apps for finding a psychologist?
+                </button>
+              </h5>
+              <div id="faqPanel-1" class="accordion-collapse collapse" aria-labelledby="faqHeading-1">
+                <div class="accordion-body">
+                  <p>TruMen Eva is not an app for finding psychologists. The possibility of seeking psychological help and support arises when app participants are unable to jointly address the challenges and requests they face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="faqHeading-2">
+                <button class="accordion-button collapsed fw-medium text-black px-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faqPanel-2" aria-expanded="false" aria-controls="faqPanel-2">
+                  How is TruMen Eva different from apps for finding a psychologist?
+                </button>
+              </h5>
+              <div id="faqPanel-2" class="accordion-collapse collapse" aria-labelledby="faqHeading-2">
+                <div class="accordion-body">
+                  <p>TruMen Eva is not an app for finding psychologists. The possibility of seeking psychological help and support arises when app participants are unable to jointly address the challenges and requests they face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="faqHeading-3">
+                <button class="accordion-button collapsed fw-medium text-black px-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faqPanel-3" aria-expanded="false" aria-controls="faqPanel-3">
+                  How is TruMen Eva different from apps for finding a psychologist?
+                </button>
+              </h5>
+              <div id="faqPanel-3" class="accordion-collapse collapse" aria-labelledby="faqHeading-3">
+                <div class="accordion-body">
+                  <p>TruMen Eva is not an app for finding psychologists. The possibility of seeking psychological help and support arises when app participants are unable to jointly address the challenges and requests they face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="faqHeading-4">
+                <button class="accordion-button collapsed fw-medium text-black px-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faqPanel-4" aria-expanded="false" aria-controls="faqPanel-4">
+                  How is TruMen Eva different from apps for finding a psychologist?
+                </button>
+              </h5>
+              <div id="faqPanel-4" class="accordion-collapse collapse" aria-labelledby="faqHeading-4">
+                <div class="accordion-body">
+                  <p>TruMen Eva is not an app for finding psychologists. The possibility of seeking psychological help and support arises when app participants are unable to jointly address the challenges and requests they face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header" id="faqHeading-5">
+                <button class="accordion-button collapsed fw-medium text-black px-0 rounded-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faqPanel-5" aria-expanded="false" aria-controls="faqPanel-5">
+                  How is TruMen Eva different from apps for finding a psychologist?
+                </button>
+              </h5>
+              <div id="faqPanel-5" class="accordion-collapse collapse" aria-labelledby="faqHeading-5">
+                <div class="accordion-body">
+                  <p>TruMen Eva is not an app for finding psychologists. The possibility of seeking psychological help and support arises when app participants are unable to jointly address the challenges and requests they face.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex flex-column flex-sm-row justify-content-center">
+            <a href="#" class="btn btn-primary btn-lg rounded-pill">Чат поддержки</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-md-5">
+          <ul class="footer-nav list-unstyled d-flex flex-column m-md-0">
+            <li><a href="./">Главная</a></li>
+            <li><a href="#about" class="smoothScroll">О проекте</a></li>
+            <li><a href="./blog.html">Блог</a></li>
+          </ul>
+          <ul class="footer-nav list-unstyled d-flex flex-column m-md-0">
+            <li><a href="./specialists.html">Специалисты</a></li>
+            <li><a href="./specialists.html">Психологи</a></li>
+            <li><a href="./specialists.html">Коучи</a></li>
+            <li><a href="./specialists.html">Энергопрактики</a></li>
+          </ul>
+          <div class="footer-nav d-flex flex-column gap-md-3">
+            <a href="./contacts.html" class="h6 m-0">Контакты</a>
+            <ul class="socials-list d-flex align-items-center gap-3 list-unstyled m-0">
+              <li><a href="#"><img src="./assets/img/icons/linkedin-g.svg" alt="LinkedIn" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/telegram-g.svg" alt="Telegram" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/mail-g.svg" alt="Mail" /></a></li>
+            </ul>
+            <p class="m-0">Регистрационный номер 7161<br />ОАЭ, Дубай</p>
+            <p class="m-0">TruMen Eva Tech Limited</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <ul class="legal-menu list-unstyled d-flex flex-column flex-md-row m-0">
+            <li><a href="#">Условия пользования</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Документы компании</a></li>
+          </ul>
+          <p class="copyright m-0">© 2023 TruMen</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav Modal -->
+    <div class="mobile-nav-modal modal d-md-none" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true" data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen-md-down modal-dialog-scrollable">
+        <div class="modal-content flex flex-column">
+          <img class="close-btn" data-bs-dismiss="modal" aria-label="Close" src="./assets/img/icons/close.svg" alt="Close" />
+          <div class="d-flex flex-column">
+            <ul class="mobile-nav-menu d-flex flex-column list-unstyled m-0">
+              <li><a href="#about" class="smoothScroll">О проекте</a></li>
+              <li><a href="./specialists.html">Специалисты</a></li>
+              <li><a href="./specialists.html">Психологи</a></li>
+              <li><a href="./specialists.html">Коучи</a></li>
+              <li><a href="./specialists.html">Энергопрактики</a></li>
+              <li><a href="./blog.html">Блог</a></li>
+              <li class="d-flex justify-content-between align-items-center gap-3">
+                <a href="./contacts.html">Контакты</a>
+                <ul class="socials-list d-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
+                  <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer d-grid flex-column mt-auto p-0 border-0">
+            <a href="#" class="btn btn-outline-primary rounded-pill m-0">Чат поддержки</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-primary rounded-pill m-0">Присоединиться к комьюнити</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Specialist Modal -->
+    <div class="modal fade" id="contactSpecialistModal" tabindex="-1" aria-labelledby="contactSpecialistModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Связаться с <span id="specialistName">Иваном</span></h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Напишите пожалуйста ваш номер телефона и вашу проблему или запрос, и выбранный специалист свяжется с вами.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Ваша проблема или запрос специалисту</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Ваше сообщение Ивану успешно отправлено</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">Он свяжется с вами в ближайшее время.
+                </div> 
+              </div>
+            </fieldset>  
+          </form>  
+
+          <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.25 5.25L18.75 18.75M5.25 18.75L18.75 5.25" stroke="#848CA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Join Community Modal -->
+    <div class="modal fade" id="joinCommunityModal" tabindex="-1" aria-labelledby="joinCommunityModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Присоединиться к комьюнити</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Заполните пожалуйста форму, и мы свяжемся с вами для бесплатного размещения на сайте.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Напишите пожалуйста несколько слов о себе</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Мы свяжемся с вами в ближайшее время</h3>
+              </div>
+            </fieldset>  
+          </form>  
+
+          <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.25 5.25L18.75 18.75M5.25 18.75L18.75 5.25" stroke="#848CA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+        </div>
+      </div>
+    </div>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      src="./assets/js/vendor/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>    
+    <script src="./assets/js/app.min.js"></script>
+    
+  </body>
+</html>

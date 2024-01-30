@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Trumeneva | Специалист</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/img/favicons/favicon.png" />
+
+    <!-- Custom styles for this template with bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/app.min.css">
+    
+  </head>
+
+  <body>
+    
+    <div class="site-alert bg-primary d-flex flex-column justify-content-center">
+      <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center text-white gap-2">
+        <p class="mb-0 fw-medium text-center">Текст со специальным предложением</p>
+        <div class="d-flex align-items-center gap-3">
+          <span class="fw-medium">Осталось</span>
+          <span class="fw-semibold counter">10:30</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 m-0" href="./">
+          <img src="./assets/img/navbar-brand.svg" alt="Trumeneva" width="146" height="45" />
+        </a>
+        <ul class="nav justify-content-center mx-lg-auto gap-2 d-none d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="./#about">О проекте</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Специалисты
+            </a>
+            <ul class="dropdown-menu p-0 overflow-hidden" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./specialists.html">Психологи</a></li>
+              <li><a class="dropdown-item" href="./specialists.html">Коучи</a></li>
+              <li><a class="dropdown-item" href="./specialists.html">Энергопрактики</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <ul class="socials-list d-none d-lg-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
+          <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+          <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
+        </ul>
+        <button class="mobile-navbar-toggler d-md-none" type="button" data-bs-toggle="modal" data-bs-target="#mobileNavModal">
+          <img src="./assets/img/icons/hamburger.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="single-specialist">
+        <div class="container d-flex flex-column">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./">Главная</a></li>
+              <li class="breadcrumb-item"><a href="./specialists.html">Специалисты</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Иван Иванов</li>
+            </ol>
+          </nav>
+          <div class="d-flex flex-column flex-lg-row justify-content-between gap-5 gap-lg-4">
+            <aside class="specialist-sidebar card d-flex flex-column align-self-start d-none d-lg-flex">
+              <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+              </div>
+              <div class="d-flex flex-column gap-1 align-items-center">
+                <h1 class="card-name fw-medium h3 mb-0">Иван Иванов</h1>
+                <p class="card-contact fw-medium mb-0">@ivanushki</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center gap-3">
+                <div class="d-flex flex-column gap-1">
+                  <h4 class="card-title fw-medium mb-0">Психотерапевт</h4>
+                  <p class="card-experience fw-medium mb-0">Стаж 18 лет</p>
+                </div>
+                <span class="card-price d-flex align-items-center gap-1">
+                  <span class="price-value fw-medium">15$</span>
+                  <span class="price-label">30 мин</span>
+                </span>
+              </div>
+              <button type="button" class="btn btn-gradient rounded-pill text-truncate" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+              <ul class="card-meta mb-0 list-unstyled d-flex flex-column">
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Документы об образовании</span>
+                  <div class="row row-cols-2 g-3">
+                    <div class="col">
+                      <a href="#" class="card-document position-relative d-flex flex-column">
+                        <span class="doc-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18C15.1421 18 18.5 14.6421 18.5 10.5C18.5 6.35786 15.1421 3 11 3C6.85786 3 3.5 6.35786 3.5 10.5C3.5 14.6421 6.85786 18 11 18Z" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5008 20.9998L16.3008 15.7998" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                        <img src="./assets/img/document.png" alt="" class="img-fluid w-100 h-100 object-fit-cover" />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Место обучения</span>
+                  <p class="meta-value mb-0">Белорусский Государственный Университет</p>
+                </li>
+                <li class="d-flex flex-column">
+                  <span class="meta-label">Время обучения</span>
+                  <p class="meta-value mb-0">С 13 мая 2000 года<br />По 14 мая 2005 года</p>
+                </li>
+              </ul>
+            </aside>
+            <div class="specialist-main d-flex flex-column">
+              <ul class="info-nav nav mb-0">
+                <li class="nav-item">
+                  <a class="nav-link smoothScroll active" aria-current="page" href="#about">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smoothScroll" href="#methods">Методы работы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smoothScroll" href="#inquiries">Запросы на проработку</a>
+                </li>
+              </ul>
+              <div class="d-lg-none d-flex gap-3">
+                <div class="card-img rounded-circle overflow-hidden align-self-center border-primary">
+                  <img src="./assets/img/specialist.jpg" alt="Иван Иванов" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column gap-1 flex-grow-1">
+                  <h1 class="card-name fw-medium h3 mb-0">Иван Иванов</h1>
+                  <p class="card-contact fw-medium mb-0">@ivanushki</p>
+                  <span class="card-price d-flex align-items-center gap-1">
+                    <span class="price-value fw-medium">15$</span>
+                    <span class="price-label">30 мин</span>
+                  </span>
+                </div>
+              </div>
+              <button type="button" class="btn btn-gradient rounded-pill text-truncate d-lg-none" data-bs-toggle="modal" data-bs-target="#contactSpecialistModal" data-specialist="Иван Иванов">Связаться со специалистом</button>
+              <div id="about" class="scroll-margin-top-30 d-flex flex-column gap-3 gap-lg-4">
+                <h3 class="mb-0">Обо мне</h3>
+                <div class="content">
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                  <p>Гуманитарная научная дисциплина, изучающая закономерности возникновения, развития и функционирования психики и психической деятельности человека и групп людей.</p>
+                </div>
+              </div>
+              <div class="embed-video">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="profile-card d-lg-none d-flex flex-column gap-3 position-relativesingle-specialist.html">
+                <div class="d-flex flex-column gap-1">
+                  <span class="profile-title">Психотерапевт</span>
+                  <span class="profile-licence d-flex align-items-center gap-1">
+                    <img src="./assets/img/icons/licence.svg" alt="" />
+                    3456789876к543
+                  </span>
+                  <span>Стаж 18 лет</span>
+                </div>
+                <ul class="card-meta mb-0 list-unstyled d-flex flex-column">
+                  <li class="d-flex flex-column">
+                    <span class="meta-label">Документы об образовании</span>
+                    <div class="row row-cols-2 g-3">
+                      <div class="col">
+                        <a href="#" class="card-document position-relative d-flex flex-column">
+                          <span class="doc-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18C15.1421 18 18.5 14.6421 18.5 10.5C18.5 6.35786 15.1421 3 11 3C6.85786 3 3.5 6.35786 3.5 10.5C3.5 14.6421 6.85786 18 11 18Z" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M21.5008 20.9998L16.3008 15.7998" stroke="#49A7EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </span>
+                          <img src="./assets/img/document.png" alt="" class="img-fluid w-100 h-100 object-fit-cover" />
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>  
+              </div>
+              <div class="meta-section d-flex flex-column">
+                <h3 class="mb-0">Интересы</h3>
+                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
+                  <li class="rounded-pill text-truncate">Кино</li>
+                  <li class="rounded-pill text-truncate">Духовное развитие</li>
+                  <li class="rounded-pill text-truncate">Физическое развитие</li>
+                  <li class="rounded-pill text-truncate">Жизненный выбор</li>
+                  <li class="rounded-pill text-truncate">Карьера</li>
+                  <li class="rounded-pill text-truncate">Отношения с семьей</li>
+                </ul>
+              </div>
+              <div id="methods" class="scroll-margin-top-30 meta-section d-flex flex-column">
+                <h3 class="mb-0">Методы работы</h3>
+                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
+                  <li class="rounded-pill text-truncate">Психоанализ</li>
+                  <li class="rounded-pill text-truncate">Коучинг</li>
+                  <li class="rounded-pill text-truncate">Гештальт</li>
+                  <li class="rounded-pill text-truncate">НЛП</li>
+                  <li class="rounded-pill text-truncate">Клиент-центрированная терапия</li>
+                  <li class="rounded-pill text-truncate">Краткосрочная психодинамическая терапия</li>
+                  <li class="rounded-pill text-truncate">Арт-терапия</li>
+                </ul>
+              </div>
+              <div id="inquiries" class="scroll-margin-top-30 meta-section d-flex flex-column">
+                <h3 class="mb-0">Запросы на проработку</h3>
+                <ul class="service-list list-unstyled mb-0 d-flex gap-2 flex-wrap">
+                  <li class="rounded-pill text-truncate">Нет друзей</li>
+                  <li class="rounded-pill text-truncate">Отношения с детьми</li>
+                  <li class="rounded-pill text-truncate">Отношения с партнером</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <!-- CTA -->
+      <section class="cta-section text-white">
+        <div class="container">
+          <div class="row g-4 g-lg-5 align-items-center">
+            <div class="col-md-8 d-flex flex-column gap-3">
+              <h2 class="h3 mb-0 fw-bold">Присоединитесь  как специалист</h2>
+              <p class="mb-0">Рекламный текст Рекламный текст Рекламный текст Рекламный текстРекламный текст Рекламный </p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-md-end">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-lg btn-light rounded-pill text-truncate"><span class="gradient-text">Присоединиться</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content section -->
+      <section class="content-section bg-light">
+        <div class="container d-flex flex-column">
+          <div class="row g-5 row-cols-1 row-cols-md-2 align-items-center">
+            <div class="text-col col d-flex flex-column gap-4 gap-lg-5">
+              <h2 class="h2 mb-0">Альтер Эго</h2>
+              <div class="d-flex flex-column gap-3 gap-lg-4">
+                <p>Только в TruMen Eva у Вас есть возможность получить созданную искусственным интеллектом картину вашего Альтер Эго.</p>
+                <p>Понимание Альтер Эго может дать вам возможность принять правильные решения в вашей жизни, выбрать верную стратегию.</p>
+              </div>  
+              <a href="#" class="btn btn-lg btn-primary align-self-sm-start rounded-pill text-truncate">Создать Альтер Эго</a>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+              <img src="./assets/img/content-image-2.png" alt="" class="img-fluid" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-md-5">
+          <ul class="footer-nav list-unstyled d-flex flex-column m-md-0">
+            <li><a href="./">Главная</a></li>
+            <li><a href="./#about">О проекте</a></li>
+            <li><a href="./blog.html">Блог</a></li>
+          </ul>
+          <ul class="footer-nav list-unstyled d-flex flex-column m-md-0">
+            <li><a href="./specialists.html">Специалисты</a></li>
+            <li><a href="./specialists.html">Психологи</a></li>
+            <li><a href="./specialists.html">Коучи</a></li>
+            <li><a href="./specialists.html">Энергопрактики</a></li>
+          </ul>
+          <div class="footer-nav d-flex flex-column gap-md-3">
+            <a href="./contacts.html" class="h6 m-0">Контакты</a>
+            <ul class="socials-list d-flex align-items-center gap-3 list-unstyled m-0">
+              <li><a href="#"><img src="./assets/img/icons/linkedin-g.svg" alt="LinkedIn" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/telegram-g.svg" alt="Telegram" /></a></li>
+              <li><a href="#"><img src="./assets/img/icons/mail-g.svg" alt="Mail" /></a></li>
+            </ul>
+            <p class="m-0">Регистрационный номер 7161<br />ОАЭ, Дубай</p>
+            <p class="m-0">TruMen Eva Tech Limited</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <ul class="legal-menu list-unstyled d-flex flex-column flex-md-row m-0">
+            <li><a href="#">Условия пользования</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Документы компании</a></li>
+          </ul>
+          <p class="copyright m-0">© 2023 TruMen</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav Modal -->
+    <div class="mobile-nav-modal modal d-md-none" id="mobileNavModal" tabindex="-1" aria-labelledby="mobileNavModalLabel" aria-hidden="true" data-bs-backdrop="false">
+      <div class="modal-dialog modal-fullscreen-md-down modal-dialog-scrollable">
+        <div class="modal-content flex flex-column">
+          <img class="close-btn" data-bs-dismiss="modal" aria-label="Close" src="./assets/img/icons/close.svg" alt="Close" />
+          <div class="d-flex flex-column">
+            <ul class="mobile-nav-menu d-flex flex-column list-unstyled m-0">
+              <li><a href="./#about">О проекте</a></li>
+              <li><a class="active" href="./specialists.html">Специалисты</a></li>
+              <li><a href="./specialists.html">Психологи</a></li>
+              <li><a href="./specialists.html">Коучи</a></li>
+              <li><a href="./specialists.html">Энергопрактики</a></li>
+              <li><a href="./blog.html">Блог</a></li>
+              <li class="d-flex justify-content-between align-items-center gap-3">
+                <a href="./contacts.html">Контакты</a>
+                <ul class="socials-list d-flex align-items-center justify-content-end gap-3 list-unstyled m-0">
+                  <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/telegram.svg" alt="Telegram" /></a></li>
+                  <li><a href="#"><img src="./assets/img/icons/mail.svg" alt="Mail" /></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer d-grid flex-column mt-auto p-0 border-0">
+            <a href="#" class="btn btn-outline-primary rounded-pill m-0">Чат поддержки</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#joinCommunityModal" class="btn btn-primary rounded-pill m-0">Присоединиться к комьюнити</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Specialist Modal -->
+    <div class="modal fade" id="contactSpecialistModal" tabindex="-1" aria-labelledby="contactSpecialistModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Связаться с <span id="specialistName">Иваном</span></h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Напишите пожалуйста ваш номер телефона и вашу проблему или запрос, и выбранный специалист свяжется с вами.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Ваша проблема или запрос специалисту</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Ваше сообщение Ивану успешно отправлено</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">Он свяжется с вами в ближайшее время.
+                </div> 
+              </div>
+            </fieldset>  
+          </form>  
+
+          <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.25 5.25L18.75 18.75M5.25 18.75L18.75 5.25" stroke="#848CA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Join Community Modal -->
+    <div class="modal fade" id="joinCommunityModal" tabindex="-1" aria-labelledby="joinCommunityModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          
+          <form class="contact-form">
+            <fieldset class="form-main d-flex flex-column gap-4">
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Присоединиться к комьюнити</h3> 
+                <div class="alert alert-primary text-center mb-0 border-0" role="alert">
+                  Заполните пожалуйста форму, и мы свяжемся с вами для бесплатного размещения на сайте.
+                </div> 
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactNameInput" class="form-label">Номер телефона или ник в Telegram</label>
+                <input type="text" name="name" class="form-control" id="contactNameInput" placeholder="Номер телефона или ник в Telegram" aria-describedby="emailHelp" required>
+              </div>
+              <div class="d-flex flex-column">
+                <label for="contactMessageInput" class="form-label">Напишите пожалуйста несколько слов о себе</label>
+                <textarea class="form-control" name="message" id="contactMessageInput" rows="3" placeholder="Введите здесь свое сообщение..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient rounded-pill">Отправить</button>
+            </fieldset>
+            <fieldset class="form-result d-flex flex-column gap-4 align-items-center d-none">
+              <img src="./assets/img/icons/success.svg" alt="" />
+              <div class="d-flex flex-column gap-3">
+                <h3 class="mb-0 text-center">Мы свяжемся с вами в ближайшее время</h3>
+              </div>
+            </fieldset>  
+          </form>  
+
+          <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M5.25 5.25L18.75 18.75M5.25 18.75L18.75 5.25" stroke="#848CA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="./assets/js/vendor/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>    
+    <script src="./assets/js/app.min.js"></script>
+    
+  </body>
+</html>
