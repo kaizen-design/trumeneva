@@ -615,6 +615,72 @@ body {
   }
 }
 
+// Contact section
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(lg) { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  & > .container-fluid {
+    gap: 80px;
+    @include media-breakpoint-down(lg) { 
+      gap: 40px;
+    }
+  }
+}
+
+.contact-card {
+  border-radius: 10px;
+  border: 1px solid $gray-300;
+  background: $gray-350;
+  padding: 62px 80px;
+  gap: 58px;
+  @include media-breakpoint-down(lg) { 
+    padding: 40px 16px;
+    gap: 40px;
+  }
+  & > div {
+    &:first-child {
+      gap: 40px;
+    }
+  }
+  h3 {
+    font-size: rem-calc(30);
+    font-weight: 500;
+    @include media-breakpoint-down(lg) { 
+      font-size: rem-calc(24);
+    }
+    & + p {
+      font-size: rem-calc(24);
+      @include media-breakpoint-down(lg) { 
+        font-size: rem-calc(20);
+      }
+    }
+  }
+  .contact-list {
+    gap: 20px;
+    li {
+      font-size: rem-calc(24);
+      font-weight: 600;
+      a {
+        text-decoration: none;
+        color: $gray-900;
+        transition: $transition-base;
+        gap: 10px;
+        &:hover {
+          color: $primary;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
 // Footer
 .footer {
   background: $gray-200;

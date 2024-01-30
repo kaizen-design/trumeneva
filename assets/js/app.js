@@ -80,7 +80,7 @@ const APP = {
 
   handleContactModal: ($modal) => {
     if (!$modal) return;
-    
+
     const $form = $modal.querySelector('.contact-form');
     const $formControls = $form.querySelectorAll('.form-control');
     const $formMain = $form.querySelector('.form-main');
@@ -169,7 +169,7 @@ const APP = {
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        $el.textContent = "Ни хуя не осталось!";
+        $el.textContent = "0:00:00";
       }
     }, 1000);
   }
